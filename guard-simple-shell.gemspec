@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'guard'
   gem.add_dependency 'rainbow'
 
-  # TODO: need to determine how to add these dev dependencies per environment (linux needs a different gem...)
-  #gem.add_dependency 'rb-fsevent'
+  # - need to determine how to add these dev dependencies per environment (linux needs a different gem...)
+  # gem.add_dependency 'rb-fsevent'
 
 end
