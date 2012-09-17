@@ -1,7 +1,8 @@
 require 'guard'
 require 'guard/guard'
+require 'rainbow'
 module Guard
-  class SimpleShell < Guard
+  class Simpleshell < Guard
     def initialize(watchers=[], options={})
       @command = options[:command]
       @run_on_start = options[:run_on_start]
@@ -33,5 +34,3 @@ module Guard
     end
   end
 end
-
-require "guard-simple_shell/version"

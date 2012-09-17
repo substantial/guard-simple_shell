@@ -1,11 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'guard-simple-shell/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "guard-simple-shell"
-  gem.version       = Guard::Simple::Shell::VERSION
+  gem.version       = "0.0.1"
   gem.authors       = ["Adam Pearson"]
   gem.email         = ["adam@substantial.com"]
   gem.description   = %q{TODO: Write a gem description}
@@ -16,4 +15,11 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  
+  gem.add_dependency 'guard'
+  gem.add_dependency 'rainbow'
+
+  # TODO: need to determine how to add these dev dependencies per environment (linux needs a different gem...)
+  #gem.add_dependency 'rb-fsevent'
+
 end
