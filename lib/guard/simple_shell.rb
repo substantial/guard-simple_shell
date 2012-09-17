@@ -1,5 +1,7 @@
+require 'guard'
+require 'guard/guard'
 module Guard
-  class SimpleShell < Guard::Guard
+  class SimpleShell < Guard
     def initialize(watchers=[], options={})
       @command = options[:command]
       @run_on_start = options[:run_on_start]
