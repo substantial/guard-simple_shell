@@ -7,8 +7,8 @@ Gem::Specification.new do |gem|
   gem.version       = "0.0.1"
   gem.authors       = ["Adam Pearson"]
   gem.email         = ["adam@substantial.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Runs a single shell command even when there are multiple file changes}
+  gem.summary       = %q{Runs a single shell command even when there are multiple file changes}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
