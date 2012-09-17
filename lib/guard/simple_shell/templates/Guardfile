@@ -1,0 +1,7 @@
+guard :simple_shell, {
+  :name => 'Example',
+  :command => 'echo "Example worked!"',
+  :run_on_start => true
+} do
+  watch(%r{test.txt})
+end
