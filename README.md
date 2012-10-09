@@ -1,4 +1,4 @@
-# Guard::Simple::Shell
+# Guard::SimpleShell
 
 A simple shell guard runner that runs a command once even when multiple files change.
 
