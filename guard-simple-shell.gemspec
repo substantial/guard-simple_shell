@@ -2,13 +2,14 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+description = "A guard that runs a shell command once, even when there are multiple file changes"
 Gem::Specification.new do |gem|
   gem.name          = "guard-simple_shell"
   gem.version       = "0.0.1"
   gem.authors       = ["Adam Pearson"]
   gem.email         = ["adam@substantial.com"]
-  gem.description   = %q{Runs a single shell command even when there are multiple file changes}
-  gem.summary       = %q{Runs a single shell command even when there are multiple file changes}
+  gem.description   = description
+  gem.summary       = description
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
