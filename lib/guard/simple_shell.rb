@@ -28,7 +28,7 @@ module Guard
     def log(msg)
       name = @options[:name]
       output = Rainbow("SHELL").color(:yellow).bright()
-      output << "[" + name.color(:blue) + "]"
+      output << "[" + Rainbow(name).color(:blue) + "]"
       output << " #{msg}"
       puts output
     end
