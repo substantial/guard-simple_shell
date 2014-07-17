@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  
+
   gem.add_dependency 'guard'
-  gem.add_dependency 'rainbow'
+  gem.add_dependency 'rainbow', '~> 1.1', '< 1.99.0'
 
   # - need to determine how to add these dev dependencies per environment (linux needs a different gem...)
   # gem.add_dependency 'rb-fsevent'
