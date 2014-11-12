@@ -1,9 +1,7 @@
-require 'guard'
-require 'guard/guard'
 require 'rainbow'
 module Guard
-  class Simpleshell < Guard
-    def initialize(watchers=[], options={})
+  class Simpleshell < Plugin
+    def initialize(options={})
       @command = options[:command]
       @run_on_start = options[:run_on_start]
       super
