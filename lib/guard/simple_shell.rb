@@ -1,4 +1,3 @@
-require 'guard/guard'
 require 'rainbow'
 module Guard
   class Simpleshell < Plugin
